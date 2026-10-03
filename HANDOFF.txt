@@ -1,0 +1,197 @@
+OMARI RICH - UNLV REBEL RACING SHOCK DYNO HANDOFF
+
+1. PURPOSE AND FINAL STATUS
+
+Support a shock-dyno test workflow: acquire force and position, calculate shaft
+velocity, retain raw/processed data, and plot force versus position and velocity.
+Imported vehicle shock-position data can inform candidate test speeds.
+
+Development stopped at a Python desktop prototype with simulated acquisition and
+offline analysis. The supplied code can exercise that software workflow. It does
+not contain a working Teensy DAQ, physical sensor interface, or motor controller.
+No hardware operation, calibration, or physical shock testing is established by
+this archive. The next effective step is deciding whether the test program is
+still wanted before resuming development.
+
+2. CANONICAL SOURCE AND PRESERVATION
+
+The supplied RR ShockDyno folder is the sole source snapshot available here and
+is treated as Omari's last supplied Shock Dyno source. main.py launches the app;
+src/gui/main_window.py contains the active GUI and recording workflow. There is
+no .git directory, release/version declaration, separate legacy source tree,
+Teensy firmware, packaged .exe, installer, or executable build recipe in this
+snapshot. This does not establish that no other copies exist elsewhere.
+
+All 67 non-.venv files and the existing empty directories are preserved in
+RR ShockDyno/ with their names and contents unchanged. No placeholder, duplicate,
+IDE file, bytecode file, old CSV, or plot was removed. The 15,369 files in the
+original Python environment are hash-inventoried but not included as a portable
+runtime. The original environment and source remain untouched on the Desktop.
+
+Verification/Original file inventory.json records paths, sizes, UTC modification
+times, hashes, and inclusion decisions for all 15,436 supplied files. Original
+pyvenv.cfg.txt records the original Python/environment setup. File timestamps and
+generated filenames are evidence of artifacts, not a substitute for Git history.
+
+3. ARCHITECTURE: IMPLEMENTED VS INTENDED
+
+Implemented software path:
+  MockDynoSource -> 50 ms Qt update timer -> live values/plots and recording
+  -> raw CSV -> five-sample centered position smoothing -> numerical velocity
+  -> processed CSV -> saved force-position and force-velocity PNGs.
+
+Separate implemented path:
+  MoTeC-style CSV -> shock-position channel selection and units handling
+  -> smoothed position/velocity -> candidate Scotch-yoke speed calculations.
+
+Omari's intended physical system, not verified as built by these files:
+  Existing three-phase motor + GS20 VFD, initially manual speed control;
+  custom reduction/crank/yoke; Teensy DAQ; Hall RPM sensing; force and position
+  sensing; calibration; raw/processed capture; eventual packaged GUI and manual.
+
+Motor/VFD wiring, reduction ratio, mechanical drawings, sensor part numbers,
+Teensy model/pinout, sampling rate, serial protocol, and interlocks are not supplied.
+The Python pyserial dependency does not by itself provide a device implementation.
+
+4. WHAT WAS COMPLETED / SOFTWARE CHECKS
+
+- Six-tab PySide6 GUI: Live Test, Analyze Data, Import MoTeC, Calibration,
+  Settings placeholder, and Help.
+- Configurable simulated stroke/RPM; generated force, position and velocity;
+  live plots; test metadata; start/stop recording; raw CSV export.
+- Position smoothing and calculated velocity; processed CSV; saved PNG plots;
+  reopening processed data for analysis.
+- MoTeC header detection, channel selection, millimeter-to-inch conversion,
+  velocity statistics, and stroke/speed recommendations.
+- Manual calibration-field persistence and standalone raw-unit conversion
+  helpers. These are not connected to real acquisition.
+
+Eleven offline check groups passed using unchanged source: all 17 Python files
+parse; the GUI initializes; 100 controlled simulated samples can be recorded;
+raw/processed CSVs and two plot PNGs are written in an isolated test directory;
+analysis displays update; a synthetic MoTeC fixture imports and converts units;
+calibration persistence works; and all original file hashes remain unchanged.
+
+All 19 supplied CSVs load with finite measurement columns and unique monotonic
+timestamps. Reprocessing all nine raw dyno files reproduces the corresponding
+saved calculated-velocity columns. This verifies software/data consistency, not
+physical sensor accuracy. The offscreen GUI check is not a normal desktop
+font-rendering/usability review. Details: Verification/Software verification.json.
+
+5. DEVELOPMENT RECORD AND DATA PROVENANCE
+
+The source modification timestamps cluster on June 25, 2026. Nine raw/processed
+CSV pairs have filenames spanning June 25-26, 2026 (6,526 raw samples total).
+Four of the later pairs also have saved force-position/force-velocity plots,
+for eight original PNGs. These are distinct run artifacts, not duplicate files
+to discard; earlier runs without PNGs remain preserved as supplied.
+
+The nine raw datasets agree with the simulator's force model within its noise
+and rounding bounds. The supplied app has only a mock acquisition source and
+its Connect Teensy button is disabled. Treat these as simulation/development
+outputs, not evidence of physical shock measurements. The CSVs do not contain
+a source-mode flag; operator, test-name, and notes fields are blank, so independent
+per-run acquisition provenance is limited.
+
+data/motec_processed/20240322-1505403_motec_processed.csv contains 307,401 rows
+covering 1,537 seconds. The corresponding original MoTeC export is not supplied.
+The date-like filename is retained without asserting its acquisition date.
+Source channel/unit metadata held in DataFrame attributes is not serialized by
+the current CSV export; the processed artifact alone cannot recover that context.
+It does not contain measured dyno force.
+
+No finer commit-by-commit timeline or previously deployed hardware revision can
+be established from this supplied folder. Existing Python .pyc files are cache
+artifacts, not an application executable or a separate canonical source version.
+
+6. DEPENDENCIES AND RUN PROCEDURE (SOFTWARE ONLY)
+
+Observed verification environment: Windows, CPython 3.14.0, PySide6 6.11.1,
+pyqtgraph 0.14.0, NumPy 2.5.0, pandas 3.0.3, pyserial 3.5, matplotlib 3.11.0,
+SciPy 1.18.0, shiboken6 6.11.1. The supplied requirements.txt is unpinned.
+Verification/requirements-observed.txt records observed installed package
+versions; it is not a claim that a clean dependency installation was tested.
+
+Extract the archive and make a working copy of RR ShockDyno before generating
+new data. Keep the archived source intact. From that working project folder:
+
+  py -3.14 -m venv .venv
+  .venv\Scripts\python.exe -m pip install -r requirements.txt
+  .venv\Scripts\python.exe main.py
+
+Alternatively, install from the archive's Verification/requirements-observed.txt
+to request the recorded package versions. The observed tests used the installed
+base Python and the supplied environment's packages, not a new network install.
+Recreate an environment instead of relying on the old absolute-path .venv.
+
+Use Simulated Data, choose test inputs, Start Recording, Stop Recording, Save CSV.
+Raw files default to data/raw; processed files and PNGs go to data/processed and
+data/plots under the working project. Use Analyze Data for saved processed CSVs.
+Import MoTeC requires the original MoTeC-style header/units layout, not this
+archive's already processed four-column MoTeC file.
+
+To rerun the offline checks from the extracted archive using a compatible Python
+environment: python -B Verification/verify_software.py. The original Desktop
+path is checked when available; a relocated copy verifies its snapshot hashes.
+Tests create disposable outputs under .verification, not the preserved project.
+No device upload command exists for this project because no firmware is supplied.
+
+7. UNFINISHED WORK AND KNOWN LIMITATIONS
+
+- Connect Teensy is disabled; there is no serial acquisition implementation,
+  Teensy firmware, Hall RPM capture, or physical force/position sampling.
+- src/motor/manual_motor.py, src/core/file_io.py, src/core/models.py, and
+  src/plotting/live_plots.py are empty placeholders. CSV and live plotting work
+  currently resides elsewhere in the GUI; empty modules do not mean those
+  software features are all absent.
+- Settings and app_settings.json are placeholders. The three original files
+  under docs/ are empty. There is no finished operator/calibration manual or .exe.
+- Zero Force and Zero Position show prototype messages only. Saved calibration
+  values are not applied to the mock sample stream; default zero/scale values
+  do not establish a calibrated sensor. NaN/infinite configuration and malformed
+  inputs are not comprehensively rejected.
+- Duplicate timestamps can yield nonfinite numerical velocity; this was
+  reproduced with synthetic input. Smoothing, timing, noise response and actual
+  acquisition rate must be validated for the physical rig. A 50 ms GUI timer is
+  not a validated DAQ sampling specification.
+- MoTeC import can select the first non-time channel when no named shock-position
+  channel matches. Only the supported millimeter labels are converted; other
+  units are carried numerically into inch-named fields. Verify channel, time
+  units and position units before using any result.
+- The formula RPM = 60*abs(velocity)/(pi*stroke) calculates crank/yoke RPM.
+  Although the UI calls it motor RPM, no reduction ratio is applied. Recommendations
+  contain no confirmed motor, drive, stroke, or force-limit validation and are
+  not approved physical operating settings. UI text mentions 99.5%, while the
+  implemented targets are 50/75/90/95/99 percent and peak.
+- Simulation parameters can change during a recording, giving nonstationary
+  synthetic data. Preview time remains zero until recording has begun.
+- build_calibration_tab is defined twice; the latter definition wins. The analysis
+  tab is constructed twice. These redundancies are preserved, not cleaned up.
+- The GUI has no implemented machine safety interlocks. Its Help describes some
+  intended future hardware actions that are not active features.
+
+8. WHERE DEVELOPMENT STOPPED / NEXT EFFECTIVE STEP
+
+First decide whether the shock-dyno test program should continue and assign a
+responsible team owner. If not, retain this as a software prototype/reference.
+
+If the program is approved: inventory and assess the actual motor/VFD, reduction,
+crank/yoke, fixtures, guarding and emergency-stop arrangements; recover missing
+drawings and original MoTeC exports; then define the sensor/Teensy pinout, serial
+format, timing and calibration requirements. Qualified mechanical/electrical
+review and independent hardware protections are required before powered testing.
+The GUI and its RPM recommendations are not safety controls.
+
+Only after those decisions should development add DAQ firmware and a real Python
+data source, verify calibrated readings against references, and commission a
+controlled test workflow. Packaging an executable comes after hardware and
+operator-workflow validation. No missing hardware features were implemented as
+part of this archive preparation.
+
+9. PERMANENT LOCATIONS
+
+OMR Archive Code Folders:
+https://drive.google.com/drive/folders/1YMSVlIcbM706c-cv89uMgr0dELSpGD02
+Shock Dyno:
+https://drive.google.com/drive/folders/1oOemWlCo05pJy6oL6FYz54XSMOxjRJGe
+Permanent GitHub repository: not yet published; no repository URL assigned.

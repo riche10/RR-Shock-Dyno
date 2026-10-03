@@ -1,0 +1,10 @@
+{
+  "force": {
+    "zero_raw": 0.0,
+    "scale_lbf_per_raw": 1.0
+  },
+  "position": {
+    "zero_raw": 0.0,
+    "scale_in_per_raw": 1.0
+  }
+}

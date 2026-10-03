@@ -1,0 +1,386 @@
+{
+  "source_changed": false,
+  "hardware_tested": false,
+  "files": [
+    {
+      "path": "HANDOFF.txt",
+      "bytes": 11424,
+      "sha256": "2ce215e313fa90d4088eaa5d94726ebf76c34d0e887fd616f60ca3347d6d8418"
+    },
+    {
+      "path": "README - START HERE.txt",
+      "bytes": 1286,
+      "sha256": "3606580ba43f3caa0b6c632049c3e7b47a3b7a84380013bd91978b48466e27cb"
+    },
+    {
+      "path": "RR ShockDyno/.idea/.gitignore",
+      "bytes": 103,
+      "sha256": "4cb643e4d25b781f1a0daf170b75f9a3b60c31c2d6fdc57b83174ce678293826"
+    },
+    {
+      "path": "RR ShockDyno/.idea/inspectionProfiles/profiles_settings.xml",
+      "bytes": 174,
+      "sha256": "6172c5997eeb3cd19c9ca2b5b97d6e2983cdd1fa60b2460d7bbb74055edcaa46"
+    },
+    {
+      "path": "RR ShockDyno/.idea/misc.xml",
+      "bytes": 314,
+      "sha256": "a0d2bb3c23aad9d5ef7e1ab245acf2508218fd273b4de5108a4935b376970768"
+    },
+    {
+      "path": "RR ShockDyno/.idea/modules.xml",
+      "bytes": 283,
+      "sha256": "4bc965f58b28d864abd17648f6b47a8e48a236b4fba776440aef6182d1e8b44e"
+    },
+    {
+      "path": "RR ShockDyno/.idea/RR ShockDyno.iml",
+      "bytes": 486,
+      "sha256": "3b6745ea86c60b161295bd64b6955dd702aae3b35be663ecf86a5dc4e1bceef3"
+    },
+    {
+      "path": "RR ShockDyno/.idea/workspace.xml",
+      "bytes": 5363,
+      "sha256": "b01a90d04c94967121afe280f916832e0229c8944c031221e7b29b067e0318f7"
+    },
+    {
+      "path": "RR ShockDyno/config/app_settings.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "RR ShockDyno/config/sensor_calibration.json",
+      "bytes": 149,
+      "sha256": "827c818946dea126731ca2a790cc49fb4f3fc7bc4e594f2b97778af2408fc051"
+    },
+    {
+      "path": "RR ShockDyno/data/motec_processed/20240322-1505403_motec_processed.csv",
+      "bytes": 7512391,
+      "sha256": "867b5ce1c4c1bdde82a1d9f02928f8c0d7ec0fb9479dbabd34d7b26cb8c6fc7a"
+    },
+    {
+      "path": "RR ShockDyno/data/plots/2026-06-26_12-57-50_shock_test_force_position.png",
+      "bytes": 63410,
+      "sha256": "3e9f1d975ba3b910352e668bdeff95595cc308a88ed10ea85004eec569c7b44d"
+    },
+    {
+      "path": "RR ShockDyno/data/plots/2026-06-26_12-57-50_shock_test_force_velocity.png",
+      "bytes": 73215,
+      "sha256": "8ad3beb4d82672c2a9cddbcffd60d14f60a1af62dff7887bf91c29b099096c5f"
+    },
+    {
+      "path": "RR ShockDyno/data/plots/2026-06-26_13-57-47_shock_test_force_position.png",
+      "bytes": 59373,
+      "sha256": "bad224783881ba009ffccbd7d14260c68d3545860337c4c839e1c0b9406a9cbf"
+    },
+    {
+      "path": "RR ShockDyno/data/plots/2026-06-26_13-57-47_shock_test_force_velocity.png",
+      "bytes": 90920,
+      "sha256": "eb90e1a43ce170bce894769974f79a2f88d380aac50f16ffa713dd55622d18e0"
+    },
+    {
+      "path": "RR ShockDyno/data/plots/2026-06-26_17-43-27_shock_test_force_position.png",
+      "bytes": 59526,
+      "sha256": "dfafd35d87a3146165070f37830a0fbea6fddbba0fcb1df9a2e66a3bf674d300"
+    },
+    {
+      "path": "RR ShockDyno/data/plots/2026-06-26_17-43-27_shock_test_force_velocity.png",
+      "bytes": 78486,
+      "sha256": "96ee4b857beb6152e172641e46105d7cf66d67a8184050ac30c579c177795640"
+    },
+    {
+      "path": "RR ShockDyno/data/plots/2026-06-26_19-08-38_shock_test_force_position.png",
+      "bytes": 60196,
+      "sha256": "1f49ab0abcc2181479a6daa2a4e3236417375c0af97d36a148b144e7f1d438ed"
+    },
+    {
+      "path": "RR ShockDyno/data/plots/2026-06-26_19-08-38_shock_test_force_velocity.png",
+      "bytes": 88400,
+      "sha256": "76d537aec06c343bca1e1529ee60b9e8772278822d2bbf96a800f37fd96bd319"
+    },
+    {
+      "path": "RR ShockDyno/data/processed/2026-06-25_21-37-49_shock_test_processed.csv",
+      "bytes": 6127,
+      "sha256": "f999691376591c3aa821e9d9d4ededf0dfb99655eaa7fb8b3b668a3fadb514b1"
+    },
+    {
+      "path": "RR ShockDyno/data/processed/2026-06-25_21-56-01_shock_test_processed.csv",
+      "bytes": 6547,
+      "sha256": "bb966e5640d0a09af2c2c178c3053b73a5e6660da70f9bbfcdaf3b72f0d298f5"
+    },
+    {
+      "path": "RR ShockDyno/data/processed/2026-06-25_23-11-39_shock_test_processed.csv",
+      "bytes": 5486,
+      "sha256": "3f22ad94c2dee1eddf916388f93046aa3927068484aadcc9628b8df8309014d0"
+    },
+    {
+      "path": "RR ShockDyno/data/processed/2026-06-25_23-36-27_shock_test_processed.csv",
+      "bytes": 332417,
+      "sha256": "8da962100f9f02f00ab5fcc6269772a66876d88b7829a54ad5312742ad6f5b9c"
+    },
+    {
+      "path": "RR ShockDyno/data/processed/2026-06-26_11-38-24_shock_test_processed.csv",
+      "bytes": 7486,
+      "sha256": "ace6bc4fb6ffa491767ee7a7aeeeb6c6f3ece9bf54ef52161c2281add88e37c3"
+    },
+    {
+      "path": "RR ShockDyno/data/processed/2026-06-26_12-57-50_shock_test_processed.csv",
+      "bytes": 2918,
+      "sha256": "4972ca19e3f55fa9ccab2428b1bad857e7eab5a2f0ff97ddff17b2713a1abc81"
+    },
+    {
+      "path": "RR ShockDyno/data/processed/2026-06-26_13-57-47_shock_test_processed.csv",
+      "bytes": 117248,
+      "sha256": "73c92a3b51b9d31b6c08b746716fb69621212b9c5c0003d2d4d63b3d74e9a9d6"
+    },
+    {
+      "path": "RR ShockDyno/data/processed/2026-06-26_17-43-27_shock_test_processed.csv",
+      "bytes": 8177,
+      "sha256": "303ce0aa34fbea36f1ad74c6274c1db48c147164f094adc5b9233eb378dce627"
+    },
+    {
+      "path": "RR ShockDyno/data/processed/2026-06-26_19-08-38_shock_test_processed.csv",
+      "bytes": 58752,
+      "sha256": "be24127f084a08b9a8aa50ec25414d36490cfbb447959a30398741a6a11c6ae0"
+    },
+    {
+      "path": "RR ShockDyno/data/raw/2026-06-25_21-37-49_shock_test_raw.csv",
+      "bytes": 3746,
+      "sha256": "f5441f88e02c17418f5bb07cb2663aa0510e7abed90fc4235a9a92495aaa66cd"
+    },
+    {
+      "path": "RR ShockDyno/data/raw/2026-06-25_21-56-01_shock_test_raw.csv",
+      "bytes": 3997,
+      "sha256": "b908d3116ebe8a7d3dbce67265981c57f6cd9727e81934364c3f916f945a1cc5"
+    },
+    {
+      "path": "RR ShockDyno/data/raw/2026-06-25_23-11-39_shock_test_raw.csv",
+      "bytes": 3458,
+      "sha256": "0fdb5731cebb05fbc928d49640e2a60d65e44a3f7cff8df7a73795291383b250"
+    },
+    {
+      "path": "RR ShockDyno/data/raw/2026-06-25_23-36-27_shock_test_raw.csv",
+      "bytes": 192769,
+      "sha256": "64aa70852152207ac6e0e931787300284905e31dcf42a26c09b3019cb99117bf"
+    },
+    {
+      "path": "RR ShockDyno/data/raw/2026-06-26_11-38-24_shock_test_raw.csv",
+      "bytes": 4446,
+      "sha256": "16644b9f4cea705863ac60a2b27e3e07a2dab30b2c859f3e3f36c77ca959c6b4"
+    },
+    {
+      "path": "RR ShockDyno/data/raw/2026-06-26_12-57-50_shock_test_raw.csv",
+      "bytes": 1769,
+      "sha256": "668e42cc593794981a348fa09bbcf27cacbcc814a7b863f518f91f37497f2863"
+    },
+    {
+      "path": "RR ShockDyno/data/raw/2026-06-26_13-57-47_shock_test_raw.csv",
+      "bytes": 67500,
+      "sha256": "168280aa45751862956878eea8ce64a5d97ff3a3abd60a1e18dd387fe229bd0f"
+    },
+    {
+      "path": "RR ShockDyno/data/raw/2026-06-26_17-43-27_shock_test_raw.csv",
+      "bytes": 4816,
+      "sha256": "d278bdd849b5d2669d9a93209716791934442b7cb767cceccca4653222b51295"
+    },
+    {
+      "path": "RR ShockDyno/data/raw/2026-06-26_19-08-38_shock_test_raw.csv",
+      "bytes": 35495,
+      "sha256": "7276fd11f87276a8068a10342d0bc6ef75fe20d022882b555b34e0a45bb553ec"
+    },
+    {
+      "path": "RR ShockDyno/docs/Calibration_Guide.md",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "RR ShockDyno/docs/Operator_Guid.md",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "RR ShockDyno/docs/Troubleshooting.md",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "RR ShockDyno/main.py",
+      "bytes": 978,
+      "sha256": "c2c801c18c32f034544ff047382e041f5a6ff7d9d1661f0f749e151af93f3660"
+    },
+    {
+      "path": "RR ShockDyno/requirements.txt",
+      "bytes": 62,
+      "sha256": "a8200f9c2f4e9bd468d69d84278d56b908573b15958b5532b9c40fa8278150e9"
+    },
+    {
+      "path": "RR ShockDyno/src/__init__.py",
+      "bytes": 4,
+      "sha256": "dba5166ad9db9ba648c1032ebbd34dcd0d085b50023b839ef5c68ca1db93a563"
+    },
+    {
+      "path": "RR ShockDyno/src/__pycache__/__init__.cpython-314.pyc",
+      "bytes": 170,
+      "sha256": "0e5e910929e3a076b7fedf5d4ab75f012de67e3e34887b61244127400680ed0a"
+    },
+    {
+      "path": "RR ShockDyno/src/core/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "RR ShockDyno/src/core/__pycache__/__init__.cpython-314.pyc",
+      "bytes": 175,
+      "sha256": "2c6ac895446936aba9b772b46a4dc86964489804b5ac8e35be3675db2dfbe067"
+    },
+    {
+      "path": "RR ShockDyno/src/core/__pycache__/analysis.cpython-314.pyc",
+      "bytes": 3700,
+      "sha256": "024e71b3015b032969e76957cd6f02a59b364e902432741d76fd2f7abd624a6e"
+    },
+    {
+      "path": "RR ShockDyno/src/core/__pycache__/calibration.cpython-314.pyc",
+      "bytes": 3071,
+      "sha256": "11aaf7ff1b850c88ffd3d5c4b605d61999990e33ffa8ebba67ca72c108847c46"
+    },
+    {
+      "path": "RR ShockDyno/src/core/__pycache__/motec_analysis.cpython-314.pyc",
+      "bytes": 11461,
+      "sha256": "87690ac9cd2af00dbebe006d56dd2233c7a10ab65257bfcaf3da3021d5860902"
+    },
+    {
+      "path": "RR ShockDyno/src/core/analysis.py",
+      "bytes": 2421,
+      "sha256": "32358c839b885f7411a2047bcb2a3643d8cf33455ae95522a8435b08eaf92b2d"
+    },
+    {
+      "path": "RR ShockDyno/src/core/calibration.py",
+      "bytes": 1580,
+      "sha256": "e1e08024bcef2af15094b18173db5d41d43b5ff0f68faad7c530e60c0468523c"
+    },
+    {
+      "path": "RR ShockDyno/src/core/file_io.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "RR ShockDyno/src/core/models.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "RR ShockDyno/src/core/motec_analysis.py",
+      "bytes": 9210,
+      "sha256": "dcee8c5f473418b631ecd3556a6357d1c4d9ca42ddecd7a52d3a1cd5b01e9be2"
+    },
+    {
+      "path": "RR ShockDyno/src/data_sources/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "RR ShockDyno/src/data_sources/__pycache__/__init__.cpython-314.pyc",
+      "bytes": 183,
+      "sha256": "85748ecfe1461fcab086548e16ef52e87040be8448ab5f212183d19afbc85a3f"
+    },
+    {
+      "path": "RR ShockDyno/src/data_sources/__pycache__/mock_source.cpython-314.pyc",
+      "bytes": 2711,
+      "sha256": "cf9823bbe3f548ef835c734e6c953ef2282920909db41ae407fd6c93584a70ab"
+    },
+    {
+      "path": "RR ShockDyno/src/data_sources/mock_source.py",
+      "bytes": 1584,
+      "sha256": "ab0fe3dfcf09dfb19ccf998c1acca241f137d1d3934feef7f42ba2c050ec09dc"
+    },
+    {
+      "path": "RR ShockDyno/src/gui/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "RR ShockDyno/src/gui/__pycache__/__init__.cpython-314.pyc",
+      "bytes": 174,
+      "sha256": "f22cfa4c8efeaeb86db91ed8b8407dc91c31d1e32bbefa0ddc9342177bbe3bca"
+    },
+    {
+      "path": "RR ShockDyno/src/gui/__pycache__/main_window.cpython-314.pyc",
+      "bytes": 54786,
+      "sha256": "f244066a71b9f0ad34b1ac72f6669aa1e816a850458bc34aa0898d484d46761c"
+    },
+    {
+      "path": "RR ShockDyno/src/gui/main_window.py",
+      "bytes": 41810,
+      "sha256": "a39234e3bb032c4fba3b4a6e1dd975e7d0af771d6b08e46519f2fa74b6a071cc"
+    },
+    {
+      "path": "RR ShockDyno/src/motor/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "RR ShockDyno/src/motor/manual_motor.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "RR ShockDyno/src/plotting/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "RR ShockDyno/src/plotting/__pycache__/__init__.cpython-314.pyc",
+      "bytes": 179,
+      "sha256": "84544f698afba2b58d2551ca935feaf7e29d83e5287ee830ed9dc3f7e316e301"
+    },
+    {
+      "path": "RR ShockDyno/src/plotting/__pycache__/saved_plots.cpython-314.pyc",
+      "bytes": 3547,
+      "sha256": "0700b649687fff079d1bed554b80e94edb9e8ce4b57221e19beb8382f7ed86ec"
+    },
+    {
+      "path": "RR ShockDyno/src/plotting/live_plots.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "RR ShockDyno/src/plotting/saved_plots.py",
+      "bytes": 1876,
+      "sha256": "ad945b2a5010d8ebd2ca8c098fc3925bcb3c6115cc933ab36912fb3aab82943f"
+    },
+    {
+      "path": "Verification/Original file inventory.json",
+      "bytes": 4767992,
+      "sha256": "8759316642f6aa26d609b819c4949cf90628218a5c39884388af6b72e52c197c"
+    },
+    {
+      "path": "Verification/Original pyvenv.cfg.txt",
+      "bytes": 661,
+      "sha256": "3fb2fc8b7b57148d260df0e5a9f595f8f48ce2446684cf8d3c7bdcda0208c524"
+    },
+    {
+      "path": "Verification/package.py",
+      "bytes": 2378,
+      "sha256": "4d34e1e568a36006e163633d6b5313a089c8802d7be1930d985e0698d3a2079b"
+    },
+    {
+      "path": "Verification/prepare_snapshot.py",
+      "bytes": 2271,
+      "sha256": "1a7e629159916081eeddbd470eeb08184d89dd80eccdd78668c87b824fb507cc"
+    },
+    {
+      "path": "Verification/requirements-observed.txt",
+      "bytes": 512,
+      "sha256": "507c90d5f20545c596b8c11d389514c6a733e40917eb6a2ed78a9e4cb58ac186"
+    },
+    {
+      "path": "Verification/Software verification.json",
+      "bytes": 15535,
+      "sha256": "def19b2556d8f5606b78c1dc272dec2455eecf3868c99350eeb0bbf9be62d91d"
+    },
+    {
+      "path": "Verification/verify_software.py",
+      "bytes": 9754,
+      "sha256": "85625dbfc2a217e4c0cc387b1b1aacd3ee587ad7c6e369da267cbe2b1b4ae5f4"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+PySide6
+pyqtgraph
+numpy
+pandas
+pyserial
+matplotlib
+scipy

@@ -1,0 +1,572 @@
+{
+  "hardware_tested": false,
+  "source_changed": false,
+  "python": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+  "dependencies": {
+    "PySide6": "6.11.1",
+    "shiboken6": "6.11.1",
+    "pyqtgraph": "0.14.0",
+    "numpy": "2.5.0",
+    "pandas": "3.0.3",
+    "pyserial": "3.5",
+    "matplotlib": "3.11.0",
+    "scipy": "1.18.0"
+  },
+  "passed_checks": [
+    "Syntax parsing: 17 original Python files",
+    "Read and inspected 19 original CSV artifacts",
+    "All saved measurement columns finite; no duplicate timestamps; all nine saved processed velocities reproduced",
+    "Empty/single sample analysis and missing-column rejection",
+    "Calibration default creation and conversion helpers in isolated directory",
+    "Synthetic MoTeC import, mm-to-in conversion, and 30 stroke/velocity recommendations",
+    "Saved MoTeC processed artifact loads and produces recommendations; raw input not available",
+    "GUI opens with six tabs and disabled Teensy connection",
+    "100 simulated GUI samples recorded; raw/processed CSV and both PNG plots saved; analysis and MoTeC displays updated",
+    "Calibration fields save/reload in isolated GUI test directory",
+    "Preserved project snapshot byte-for-byte identical; original source/environment unchanged when available for comparison"
+  ],
+  "limitations_reproduced": [
+    "Duplicate timestamps yield nonfinite calculated velocity; original code does not reject duplicates.",
+    "Zero Force and Zero Position only show prototype messages; they do not change calibration."
+  ],
+  "data_inventory": [
+    {
+      "path": "data/motec_processed/20240322-1505403_motec_processed.csv",
+      "rows": 307401,
+      "columns": [
+        "time_s",
+        "shock_position_in",
+        "smoothed_shock_position_in",
+        "shock_velocity_in_s"
+      ],
+      "nonfinite_measurement_cells": 0,
+      "duplicate_time_values": 0,
+      "time_monotonic": true,
+      "duration_s": 1537.0
+    },
+    {
+      "path": "data/processed/2026-06-25_21-37-49_shock_test_processed.csv",
+      "rows": 76,
+      "columns": [
+        "time_s",
+        "force_lbf",
+        "position_in",
+        "velocity_in_s",
+        "stroke_setting_in",
+        "motor_rpm",
+        "corner",
+        "test_name",
+        "operator",
+        "notes",
+        "smoothed_position_in",
+        "calculated_velocity_in_s"
+      ],
+      "nonfinite_measurement_cells": 0,
+      "duplicate_time_values": 0,
+      "time_monotonic": true,
+      "duration_s": 4.687837
+    },
+    {
+      "path": "data/processed/2026-06-25_21-56-01_shock_test_processed.csv",
+      "rows": 82,
+      "columns": [
+        "time_s",
+        "force_lbf",
+        "position_in",
+        "velocity_in_s",
+        "stroke_setting_in",
+        "motor_rpm",
+        "corner",
+        "test_name",
+        "operator",
+        "notes",
+        "smoothed_position_in",
+        "calculated_velocity_in_s"
+      ],
+      "nonfinite_measurement_cells": 0,
+      "duplicate_time_values": 0,
+      "time_monotonic": true,
+      "duration_s": 5.061579
+    },
+    {
+      "path": "data/processed/2026-06-25_23-11-39_shock_test_processed.csv",
+      "rows": 65,
+      "columns": [
+        "time_s",
+        "force_lbf",
+        "position_in",
+        "velocity_in_s",
+        "stroke_setting_in",
+        "motor_rpm",
+        "corner",
+        "test_name",
+        "operator",
+        "notes",
+        "smoothed_position_in",
+        "calculated_velocity_in_s"
+      ],
+      "nonfinite_measurement_cells": 0,
+      "duplicate_time_values": 0,
+      "time_monotonic": true,
+      "duration_s": 4.000234
+    },
+    {
+      "path": "data/processed/2026-06-25_23-36-27_shock_test_processed.csv",
+      "rows": 3962,
+      "columns": [
+        "time_s",
+        "force_lbf",
+        "position_in",
+        "velocity_in_s",
+        "stroke_setting_in",
+        "motor_rpm",
+        "corner",
+        "test_name",
+        "operator",
+        "notes",
+        "smoothed_position_in",
+        "calculated_velocity_in_s"
+      ],
+      "nonfinite_measurement_cells": 0,
+      "duplicate_time_values": 0,
+      "time_monotonic": true,
+      "duration_s": 247.563074
+    },
+    {
+      "path": "data/processed/2026-06-26_11-38-24_shock_test_processed.csv",
+      "rows": 91,
+      "columns": [
+        "time_s",
+        "force_lbf",
+        "position_in",
+        "velocity_in_s",
+        "stroke_setting_in",
+        "motor_rpm",
+        "corner",
+        "test_name",
+        "operator",
+        "notes",
+        "smoothed_position_in",
+        "calculated_velocity_in_s"
+      ],
+      "nonfinite_measurement_cells": 0,
+      "duplicate_time_values": 0,
+      "time_monotonic": true,
+      "duration_s": 5.637188
+    },
+    {
+      "path": "data/processed/2026-06-26_12-57-50_shock_test_processed.csv",
+      "rows": 35,
+      "columns": [
+        "time_s",
+        "force_lbf",
+        "position_in",
+        "velocity_in_s",
+        "stroke_setting_in",
+        "motor_rpm",
+        "corner",
+        "test_name",
+        "operator",
+        "notes",
+        "smoothed_position_in",
+        "calculated_velocity_in_s"
+      ],
+      "nonfinite_measurement_cells": 0,
+      "duplicate_time_values": 0,
+      "time_monotonic": true,
+      "duration_s": 2.125374
+    },
+    {
+      "path": "data/processed/2026-06-26_13-57-47_shock_test_processed.csv",
+      "rows": 1387,
+      "columns": [
+        "time_s",
+        "force_lbf",
+        "position_in",
+        "velocity_in_s",
+        "stroke_setting_in",
+        "motor_rpm",
+        "corner",
+        "test_name",
+        "operator",
+        "notes",
+        "smoothed_position_in",
+        "calculated_velocity_in_s"
+      ],
+      "nonfinite_measurement_cells": 0,
+      "duplicate_time_values": 0,
+      "time_monotonic": true,
+      "duration_s": 86.754229
+    },
+    {
+      "path": "data/processed/2026-06-26_17-43-27_shock_test_processed.csv",
+      "rows": 99,
+      "columns": [
+        "time_s",
+        "force_lbf",
+        "position_in",
+        "velocity_in_s",
+        "stroke_setting_in",
+        "motor_rpm",
+        "corner",
+        "test_name",
+        "operator",
+        "notes",
+        "smoothed_position_in",
+        "calculated_velocity_in_s"
+      ],
+      "nonfinite_measurement_cells": 0,
+      "duplicate_time_values": 0,
+      "time_monotonic": true,
+      "duration_s": 6.130955
+    },
+    {
+      "path": "data/processed/2026-06-26_19-08-38_shock_test_processed.csv",
+      "rows": 729,
+      "columns": [
+        "time_s",
+        "force_lbf",
+        "position_in",
+        "velocity_in_s",
+        "stroke_setting_in",
+        "motor_rpm",
+        "corner",
+        "test_name",
+        "operator",
+        "notes",
+        "smoothed_position_in",
+        "calculated_velocity_in_s"
+      ],
+      "nonfinite_measurement_cells": 0,
+      "duplicate_time_values": 0,
+      "time_monotonic": true,
+      "duration_s": 45.62753
+    },
+    {
+      "path": "data/raw/2026-06-25_21-37-49_shock_test_raw.csv",
+      "rows": 76,
+      "columns": [
+        "time_s",
+        "force_lbf",
+        "position_in",
+        "velocity_in_s",
+        "stroke_setting_in",
+        "motor_rpm",
+        "corner",
+        "test_name",
+        "operator",
+        "notes"
+      ],
+      "nonfinite_measurement_cells": 0,
+      "duplicate_time_values": 0,
+      "time_monotonic": true,
+      "duration_s": 4.687837,
+      "reprocessed_matches_saved_velocity": true,
+      "max_force_residual_from_current_simulator_lbf": 1.9817000000000036,
+      "metadata_values": {
+        "motor_rpm": [
+          "60.0"
+        ],
+        "stroke_setting_in": [
+          "4.0"
+        ],
+        "test_name": [],
+        "operator": [],
+        "notes": []
+      }
+    },
+    {
+      "path": "data/raw/2026-06-25_21-56-01_shock_test_raw.csv",
+      "rows": 82,
+      "columns": [
+        "time_s",
+        "force_lbf",
+        "position_in",
+        "velocity_in_s",
+        "stroke_setting_in",
+        "motor_rpm",
+        "corner",
+        "test_name",
+        "operator",
+        "notes"
+      ],
+      "nonfinite_measurement_cells": 0,
+      "duplicate_time_values": 0,
+      "time_monotonic": true,
+      "duration_s": 5.061579,
+      "reprocessed_matches_saved_velocity": true,
+      "max_force_residual_from_current_simulator_lbf": 2.006799999999984,
+      "metadata_values": {
+        "motor_rpm": [
+          "60.0"
+        ],
+        "stroke_setting_in": [
+          "4.0"
+        ],
+        "test_name": [],
+        "operator": [],
+        "notes": []
+      }
+    },
+    {
+      "path": "data/raw/2026-06-25_23-11-39_shock_test_raw.csv",
+      "rows": 65,
+      "columns": [
+        "time_s",
+        "force_lbf",
+        "position_in",
+        "velocity_in_s",
+        "stroke_setting_in",
+        "motor_rpm",
+        "corner",
+        "test_name",
+        "operator",
+        "notes"
+      ],
+      "nonfinite_measurement_cells": 0,
+      "duplicate_time_values": 0,
+      "time_monotonic": true,
+      "duration_s": 4.000234,
+      "reprocessed_matches_saved_velocity": true,
+      "max_force_residual_from_current_simulator_lbf": 1.9316999999998643,
+      "metadata_values": {
+        "motor_rpm": [
+          "200.0"
+        ],
+        "stroke_setting_in": [
+          "10.0"
+        ],
+        "test_name": [],
+        "operator": [],
+        "notes": []
+      }
+    },
+    {
+      "path": "data/raw/2026-06-25_23-36-27_shock_test_raw.csv",
+      "rows": 3962,
+      "columns": [
+        "time_s",
+        "force_lbf",
+        "position_in",
+        "velocity_in_s",
+        "stroke_setting_in",
+        "motor_rpm",
+        "corner",
+        "test_name",
+        "operator",
+        "notes"
+      ],
+      "nonfinite_measurement_cells": 0,
+      "duplicate_time_values": 0,
+      "time_monotonic": true,
+      "duration_s": 247.563074,
+      "reprocessed_matches_saved_velocity": true,
+      "max_force_residual_from_current_simulator_lbf": 2.0368999999999993,
+      "metadata_values": {
+        "motor_rpm": [
+          "0.0",
+          "1.0",
+          "10.0",
+          "100.0",
+          "1000.0",
+          "12.0",
+          "14.0",
+          "15.0",
+          "16.0",
+          "2.0",
+          "3.0",
+          "5.0",
+          "50.0",
+          "500.0",
+          "6.0",
+          "60.0",
+          "61.0",
+          "7.0",
+          "8.0",
+          "89.0"
+        ],
+        "stroke_setting_in": [
+          "4.0"
+        ],
+        "test_name": [],
+        "operator": [],
+        "notes": []
+      }
+    },
+    {
+      "path": "data/raw/2026-06-26_11-38-24_shock_test_raw.csv",
+      "rows": 91,
+      "columns": [
+        "time_s",
+        "force_lbf",
+        "position_in",
+        "velocity_in_s",
+        "stroke_setting_in",
+        "motor_rpm",
+        "corner",
+        "test_name",
+        "operator",
+        "notes"
+      ],
+      "nonfinite_measurement_cells": 0,
+      "duplicate_time_values": 0,
+      "time_monotonic": true,
+      "duration_s": 5.637188,
+      "reprocessed_matches_saved_velocity": true,
+      "max_force_residual_from_current_simulator_lbf": 1.9125999999999976,
+      "metadata_values": {
+        "motor_rpm": [
+          "60.0"
+        ],
+        "stroke_setting_in": [
+          "4.0"
+        ],
+        "test_name": [],
+        "operator": [],
+        "notes": []
+      }
+    },
+    {
+      "path": "data/raw/2026-06-26_12-57-50_shock_test_raw.csv",
+      "rows": 35,
+      "columns": [
+        "time_s",
+        "force_lbf",
+        "position_in",
+        "velocity_in_s",
+        "stroke_setting_in",
+        "motor_rpm",
+        "corner",
+        "test_name",
+        "operator",
+        "notes"
+      ],
+      "nonfinite_measurement_cells": 0,
+      "duplicate_time_values": 0,
+      "time_monotonic": true,
+      "duration_s": 2.125374,
+      "reprocessed_matches_saved_velocity": true,
+      "max_force_residual_from_current_simulator_lbf": 1.8381999999999863,
+      "metadata_values": {
+        "motor_rpm": [
+          "60.0"
+        ],
+        "stroke_setting_in": [
+          "4.0"
+        ],
+        "test_name": [],
+        "operator": [],
+        "notes": []
+      }
+    },
+    {
+      "path": "data/raw/2026-06-26_13-57-47_shock_test_raw.csv",
+      "rows": 1387,
+      "columns": [
+        "time_s",
+        "force_lbf",
+        "position_in",
+        "velocity_in_s",
+        "stroke_setting_in",
+        "motor_rpm",
+        "corner",
+        "test_name",
+        "operator",
+        "notes"
+      ],
+      "nonfinite_measurement_cells": 0,
+      "duplicate_time_values": 0,
+      "time_monotonic": true,
+      "duration_s": 86.754229,
+      "reprocessed_matches_saved_velocity": true,
+      "max_force_residual_from_current_simulator_lbf": 2.031400000000005,
+      "metadata_values": {
+        "motor_rpm": [
+          "60.0"
+        ],
+        "stroke_setting_in": [
+          "4.0"
+        ],
+        "test_name": [],
+        "operator": [],
+        "notes": []
+      }
+    },
+    {
+      "path": "data/raw/2026-06-26_17-43-27_shock_test_raw.csv",
+      "rows": 99,
+      "columns": [
+        "time_s",
+        "force_lbf",
+        "position_in",
+        "velocity_in_s",
+        "stroke_setting_in",
+        "motor_rpm",
+        "corner",
+        "test_name",
+        "operator",
+        "notes"
+      ],
+      "nonfinite_measurement_cells": 0,
+      "duplicate_time_values": 0,
+      "time_monotonic": true,
+      "duration_s": 6.130955,
+      "reprocessed_matches_saved_velocity": true,
+      "max_force_residual_from_current_simulator_lbf": 1.9912000000000063,
+      "metadata_values": {
+        "motor_rpm": [
+          "60.0"
+        ],
+        "stroke_setting_in": [
+          "4.0"
+        ],
+        "test_name": [],
+        "operator": [],
+        "notes": []
+      }
+    },
+    {
+      "path": "data/raw/2026-06-26_19-08-38_shock_test_raw.csv",
+      "rows": 729,
+      "columns": [
+        "time_s",
+        "force_lbf",
+        "position_in",
+        "velocity_in_s",
+        "stroke_setting_in",
+        "motor_rpm",
+        "corner",
+        "test_name",
+        "operator",
+        "notes"
+      ],
+      "nonfinite_measurement_cells": 0,
+      "duplicate_time_values": 0,
+      "time_monotonic": true,
+      "duration_s": 45.62753,
+      "reprocessed_matches_saved_velocity": true,
+      "max_force_residual_from_current_simulator_lbf": 1.9938000000000216,
+      "metadata_values": {
+        "motor_rpm": [
+          "60.0"
+        ],
+        "stroke_setting_in": [
+          "4.0"
+        ],
+        "test_name": [],
+        "operator": [],
+        "notes": []
+      }
+    }
+  ],
+  "saved_motec_summary": {
+    "sample_count": 307401,
+    "duration_s": 1537.0,
+    "min_position_in": -0.76,
+    "max_position_in": 6.57,
+    "travel_used_in": 7.33,
+    "max_positive_velocity_in_s": 85.20000000007758,
+    "max_negative_velocity_in_s": -129.4000000001177
+  },
+  "visual_qa_note": "Offscreen execution checks widget creation and actions, not normal desktop font rendering or operator usability."
+}
