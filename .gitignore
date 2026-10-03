@@ -1,0 +1,6 @@
+# Existing archived IDE/cache records remain tracked as preservation evidence.
+**/.venv/
+**/__pycache__/
+**/.verification/
+**/.idea/
+**/.vscode/

@@ -20,4 +20,7 @@ portable runtime. Nothing was deleted or edited in the supplied Desktop folder.
 
 Drive project folder:
 https://drive.google.com/drive/folders/1oOemWlCo05pJy6oL6FYz54XSMOxjRJGe
-Permanent GitHub repository: not yet published; no repository URL assigned.
+Permanent GitHub repository:
+https://github.com/riche10/RR-Shock-Dyno
+Clone: git clone https://github.com/riche10/RR-Shock-Dyno.git
+The repository contains the source, data, verification records and handoff.

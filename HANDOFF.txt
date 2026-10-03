@@ -194,4 +194,8 @@ OMR Archive Code Folders:
 https://drive.google.com/drive/folders/1YMSVlIcbM706c-cv89uMgr0dELSpGD02
 Shock Dyno:
 https://drive.google.com/drive/folders/1oOemWlCo05pJy6oL6FYz54XSMOxjRJGe
-Permanent GitHub repository: not yet published; no repository URL assigned.
+Permanent GitHub repository:
+https://github.com/riche10/RR-Shock-Dyno
+Clone: git clone https://github.com/riche10/RR-Shock-Dyno.git
+The repository can be cloned or forked. Its history starts with the supplied
+archive snapshot and records publication updates, not reconstructed old commits.
